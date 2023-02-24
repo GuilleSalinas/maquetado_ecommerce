@@ -17,7 +17,7 @@ app.set('views', path.join(__dirname + '/views'));
 app.set('view engine', 'ejs');
 
 // configurar el directorio public o estaticos usando la funcion de middlewares 
-// que tiene express express.static(__dirname, 'directorio)
+// que tiene express express.static(__dirname, 'directorio).-
 app.use('/recursos',express.static(path.join(__dirname + '/public')));
 // console.log(__dirname + '/public');
 
@@ -33,7 +33,7 @@ const loginRoute = require('./routes/login.Route');
 // app.use('/', require('./routes/router) y no declarar la variable routes arriba, pero queda mas legible el codigo
 app.use('/', homeRoute);
 app.use('/', cartRoute);
-app.use('/:id', productDetailRoute);
+app.use('/:id', productDetailRoute); // tener cuidado con el '/:id' no olvidar los dos puntos.
 app.use('/', loginRoute);
 
 
