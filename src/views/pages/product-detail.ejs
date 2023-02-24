@@ -1,0 +1,86 @@
+<%- include('../partials/head') %>
+<body>
+    <!-- aqui va el header o el menu -->
+    <header>
+        <%- include('../partials/header') %>
+    </header>
+
+
+    <main>
+      <!-- seccion detalle del producto -->
+      <div class="small-container">
+        <div class="t-det">
+          <h2 class="title_det_prod">Detalle del producto</h2>
+        </div>
+      </div>
+      <section class="small-container single-product">
+        <div class="row car-perfil">
+          <div class="col-2">
+            <img src="/<%= product.img %>" width="320px" height="400px">
+          </div>
+          <div class="col-2">
+            <p>Para tu Casa</p>
+            <h1><%= product.name %></h1>
+            <p>$<%= product.price.toFixed(2) %></p>
+            <input type="number" value="1" />
+            <a href="" class="btn">Agregar al carrito</a>
+
+            <h3>Descripción producto</h3>
+            <br />
+            <p><%= product.description %></p>
+            
+          </div>
+        </div>
+      </section>
+      
+      <div class="small-container">
+        <div class="row row-2 t-row">
+          <!-- <h2 class="title_det_prod">Otros productos</h2>
+            <p>Ver más</p> -->
+        </div>
+      </div>
+
+      <!-- <section class="small-container">
+        <div class="row">
+          <div class="col-4">
+            <img src="recursos/img/product-1.jpg" />
+            <span>Piluso</span>
+            <h4>Tela de gin</h4>
+            <p>$1500</p>
+          </div>
+          <div class="col-4">
+            <img src="recursos/img/product-2.jpg" />
+            <span>Piluso</span>
+            <h4>Tela de gin</h4>
+            <p>$1500</p>
+          </div>
+          <div class="col-4">
+            <img src="recursos/img/product-3.jpg" />
+            <span>Piluso</span>
+            <h4>Tela de gin</h4>
+            <p>$1500</p>
+          </div>
+          <div class="col-4">
+            <img src="recursos/img/product-4.jpg" />
+            <span>Piluso</span>
+            <h4>Tela de gin</h4>
+            <p>$1500</p>
+          </div>
+        </div>
+      </section> -->
+    </main>
+
+    <!-- aqui va el footer -->
+    <footer>
+        <%- include('../partials/footer') %>
+    </footer>
+    
+    
+    <script defer src="recursos/js/app.js"></script>
+    <script defer src="recursos/js/accout.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script defer src="recursos/js/head.menu.js"></script>
+    
+    
+  </body>
+</html>

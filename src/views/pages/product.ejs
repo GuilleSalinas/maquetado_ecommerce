@@ -1,0 +1,55 @@
+<%- include ('template/head', {tituloweb:'Página Productos'}); %>
+<body>
+    
+<!-- aqui va el header o el menu -->
+<header><%- include ('header');%></header>
+
+<main>
+    <!-- seccion producto -->
+    <section class="small-container">
+        <div class="row row-2">
+            <h2>Los Productos</h2>
+            <select>
+                <option>Orden por Default</option>
+                <option>Orden por precio</option>
+                <option>Orden mas popular</option>
+                <option>Orden mas buscado</option>
+                <option>Orden mas vemdido</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <!-- aca coloco los datos para los productos en ejs. -->
+            <% productos.forEach((productos)=> { %>
+                <div class="col-4">
+                    <a href="/product-detail"><img src=<%= productos.image %>></a>
+                    <span><%= productos.name %></span>
+                    <h4><%= productos.description %></h4>
+                    <p><%= productos.precio %></p>
+                </div>
+            <% }) %>
+            
+
+            <div class="page-btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>&#8594;</span>
+            </div>
+        </div>
+    </section>
+        
+</main>
+
+<!-- aqui va el footer -->
+<footer><%- include('footer'); %></footer>
+
+<script defer src="recursos/js/app.js"></script>
+<script defer src="recursos/js/accout.js"></script>
+<script defer src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script defer src="recursos/js/head.menu.js"></script>
+
+</body>
+
+</html>

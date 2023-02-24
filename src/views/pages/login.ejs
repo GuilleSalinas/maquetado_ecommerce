@@ -1,0 +1,79 @@
+<%- include('../partials/head') %>
+
+
+
+<body>
+    <!-- aqui va el header o el menu -->
+    <header>
+        <%- include('../partials/header') %>
+    </header>
+
+    <main>
+      <!-- ---------- account page ----------- -->
+      <section class="account-page">
+        <h2 class="title-r" >Registro</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <img src="recursos/img/logo-1.png" width="100%" />
+            </div>
+
+            <div class="col-2">
+              <div class="form-container">
+
+                <div class="form-btn">
+                  <span onclick="login()">Login</span>
+                  <span onclick="register()">Registro</span>
+                  <hr id="Indicator" />
+                </div>
+
+                <!-- formulario de LOGIN -->
+                <form id="LoginForm">
+                  <div class="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre</label>
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+                  </div>
+
+                  <label for="password" class="formulario__label">Contraseña</label>
+                  <input type="password" class="formulario__input" name="password" id="password">
+                  <span></span>
+                  
+                  <button type="submit" class="btn">Login</button>
+                  <a href="">Olvido su password</a>
+                </form>
+                
+
+                <!--  formulario de REGISTRO -->
+                <form id="RegForm">
+                  
+                  <label for="nombre" class="formulario__label">Nombre</label>
+                  <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+                  
+                  <label for="correo" class="formulario__label">Correo Electrónico</label>
+                  <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                  
+                  <label for="password" class="formulario__label">Contraseña</label>
+                  <input type="password" class="formulario__input" name="password" id="password">
+                  <span></span>
+                  <button type="submit" class="btn">Registro</button>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- aqui va el footer -->
+    <footer>
+      <%- include('../partials/footer') %>
+  </footer>
+
+  <script defer src="recursos/js/app.js"></script>
+  <script defer src="recursos/js/accout.js"></script>
+  <script defer src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script defer src="recursos/js/head.menu.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<%- include('../partials/head') %>
+<body>
+    <!-- aqui va el header o el menu -->
+    <header>
+        <%- include('../partials/header') %>
+    </header>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <h1>Esto es la pagina de <br> Deco Ideas</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur amet maxime autem veniam eligendi aliquid provident sint, vero maiores repellat.</p>
+                <a href="" class="btn">Seguirme &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="recursos/img/logo-1.png">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- seccion producto -->
+    <section class="small-container" id="my_productos">
+        <h2 class="title">Productos</h2>
+        <ul class="grid-4">
+        <% for(const product of products) { %>
+            <a href="/product-detail/<%= product.id %>">
+            <li class="borde">   
+                <div class="col-4">
+                    <img src="<%= product.img %>" width="300px">
+                    <span><%= product.name %></span>
+                    <h4><%= product.description %></h4>
+                    <p>$<%= product.price.toFixed(2) %></p>
+                </div>
+            </li>
+            </a>
+        <% }%>
+        </ul>
+    </section>
+    
+    
+
+
+    <!-- seccion ofertas -->
+    <section class="offer" id="ofertas">
+        <section class="small-container">
+            <h2 class="title-offer">Oferta</h2>
+            <div class="row">
+                <div class="col-2">
+                    <img src="recursos/img/exclusive.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Disponible en varios tamaños</p>
+                    <h1>Canasta porta objetos</h1>
+                    <small>
+                        Canastas construidas en hilo blanco con terminaciones en cuero para colocar todo tipo de objetos.<br/>
+                    </small>
+                    <a href="" class="btn">Comprar &#8594;</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+</main>
+
+<!-- aqui va el footer -->
+<footer>
+    <%- include('../partials/footer') %>
+</footer>
+
+
+<script defer src="recursos/js/app.js"></script>
+<script defer src="recursos/js/accout.js"></script>
+<script defer src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script defer src="recursos/js/head.menu.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+[
+    {
+      "id": 1,
+      "name": "producto 1",
+      "description": "Es el primer producto",
+      "price": 4500.994875,
+      "img": "recursos/img/product-1.jpg"
+    }, 
+    {
+      "id": 2,
+      "name": "producto 2",
+      "description": "Es el segundo producto",
+      "price": 4500.994875,
+      "img": "recursos/img/product-2.jpg"
+
+    },
+    {
+      "id": 3,
+      "name": "producto 3",
+      "description": "Es el tercero producto",
+      "price": 4500.994875,
+      "img": "recursos/img/product-3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "producto 4",
+      "description": "Es el cuarto producto",
+      "price": 4500.994875,
+      "img": "recursos/img/product-4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "producto 5",
+      "description": "Es el quinto producto",
+      "price": 4500.994875,
+      "img": "recursos/img/product-5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "producto 6",
+      "description": "Es el sexto producto",
+      "price": 4500.994875,
+      "img": "recursos/img/product-6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "producto 7",
+      "description": "Es el septimo producto",
+      "price": 4500.994875,
+      "img": "recursos/img/product-7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "producto 8",
+      "description": "Es el octavo producto",
+      "price": 4500.994875,
+      "img": "recursos/img/product-8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "producto 9",
+      "description": "Es el noveno producto",
+      "price": 4500.994875,
+      "img": "recursos/img/product-9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "producto 10",
+      "description": "Es el decimo producto",
+      "price": 4500.994875,
+      "img": "recursos/img/product-10.jpg"
+    },
+    {
+      "id": 11,
+      "name": "producto 11",
+      "description": "Es el once producto",
+      "price": 4500.994875,
+      "img": "recursos/img/product-11.jpg"
+    },
+    {
+      "id": 12,
+      "name": "producto 12",
+      "description": "Es el doce producto",
+      "price": 4500.994875,
+      "img": "recursos/img/product-13.jpg"
+    }
+  ]
+  

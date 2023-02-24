@@ -1,0 +1,105 @@
+.aline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg);
+}
+
+.container-car{
+    display:flex;
+    flex-direction: column;
+
+    width: 75em;
+    max-width: 60rem;
+    height: 80em;
+    padding: 20px;
+    background-image: url(../img/bg-web.png);
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
+    border-radius: 2rem;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.car-1{
+    background: var(--color-borde);
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    width: auto;
+    height: 15em;
+    border-radius: 2em;
+    position: relative;
+    margin-top: 4em;
+}
+
+.img-car{
+    width: 10em;
+    margin-left: 4em;
+    /* border-radius: 25px; */
+    background: #fff;
+    position: relative;
+}
+
+.info-car{
+    display: flex;
+}
+
+.info-car .titulo-car{
+    position: absolute;
+    left: 150px;
+    bottom: 70px;
+    
+    padding: 0 1.5em;
+    font-size: 2.5em;
+    font-weight: 900;
+    margin: 0.5em 0 0.5em;
+    color: var(--color-secundario);
+}
+
+.info-car .precio-car{
+    position: absolute;
+    left: 150px;
+    bottom: 30px;
+
+    place-items: center end;
+    padding: 0 1.5em;
+    font-size: 2.5em;
+    font-weight: 900;
+    margin: 0.5em 0 0.5em;
+    color: var(--color-et-primario);
+}
+
+.boton-mas{
+ position: absolute;
+ left: 450px;
+ bottom: 30px;  
+
+  width:35px;
+  height:35px;
+  border-width:50%;
+  color:#fff;
+  border-color:var(--color-accion);
+  border-top-left-radius:50%;
+  border-top-right-radius:50%;
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius:50%;
+  box-shadow: 0px 0px 0px 2px #9fb4f2;
+  background:var(--color-et-primario);
+}
+.boton-menos{
+ position: absolute;
+ left: 350px;
+ bottom: 30px;  
+ 
+ width:35px;
+  height:35px;
+  border-width:50%;
+  color:#fff;
+  border-color:var(--color-accion);
+  border-top-left-radius:50%;
+  border-top-right-radius:50%;
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius:50%;
+  box-shadow: 0px 0px 0px 2px #9fb4f2;
+  background:var(--color-et-primario);
+}
